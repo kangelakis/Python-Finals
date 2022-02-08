@@ -1,6 +1,5 @@
 import random,time
 
-
 nw1 = 0 #Normal win for p1 etc for the rest
 nw2 = 0
 ndr = 0
