@@ -5,6 +5,7 @@ nw2 = 0
 ndr = 0
 print ("-----Normal Shuffle-----")
 for r in range(100):
+    
     print(f"Normal Round {r+1}")
     #time.sleep(1) 
     print ("Shuffling..")
@@ -115,10 +116,11 @@ for r in range(100):
         while sum2<16:
             sum2=0
             for no10s in xartia:
-                if (no10s[0] not in cheatcards):
+                if ((no10s[0] not in cheatcards) or player2!=[]): #Don't append a card of value 10 to P2 in the 1st round only
                     player2.append(no10s)
                     xartia.remove(no10s)
                     break
+
             # print (player2)
             for card in player2:
                 if card[0] in figures:
